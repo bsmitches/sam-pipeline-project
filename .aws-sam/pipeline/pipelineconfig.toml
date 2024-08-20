@@ -1,18 +1,18 @@
 version = 0.1
 [default.pipeline_bootstrap.parameters]
-pipeline_user = "arn:aws-us-gov:iam::541350054537:user/aws-sam-cli-managed-dev-pipeline-reso-PipelineUser-FRZUT50R5YDO"
+pipeline_user = "arn:aws-us-gov:iam::541350054537:user/aws-sam-cli-managed-dev-pipeline-reso-PipelineUser-18YCEPGX2S1QM"
 permissions_provider = "AWS IAM"
 
 [dev.pipeline_bootstrap.parameters]
-pipeline_execution_role = "arn:aws-us-gov:iam::541350054537:role/aws-sam-cli-managed-dev-pipel-PipelineExecutionRole-KX5UPkkjaV2S"
-cloudformation_execution_role = "arn:aws-us-gov:iam::541350054537:role/aws-sam-cli-managed-dev-p-CloudFormationExecutionRo-OrSlLqcNRHVf"
-artifacts_bucket = "aws-sam-cli-managed-dev-pipeline-r-artifactsbucket-3cu6zwiln8c3"
+pipeline_execution_role = "arn:aws-us-gov:iam::541350054537:role/aws-sam-cli-managed-dev-pipel-PipelineExecutionRole-unLfnCHjDZXk"
+cloudformation_execution_role = "arn:aws-us-gov:iam::541350054537:role/aws-sam-cli-managed-dev-p-CloudFormationExecutionRo-YwlPG0e82Lpm"
+artifacts_bucket = "aws-sam-cli-managed-dev-pipeline-r-artifactsbucket-cwwuyqlflzx8"
 image_repository = ""
-region = "us-gov-west-1"
+region = "us-gov-east-1"
 
-[prod.pipeline_bootstrap.parameters]
-pipeline_execution_role = "arn:aws-us-gov:iam::788033553156:role/aws-sam-cli-managed-prod-pipe-PipelineExecutionRole-pkOwrVNstNgh"
-cloudformation_execution_role = "arn:aws-us-gov:iam::788033553156:role/aws-sam-cli-managed-prod--CloudFormationExecutionRo-2A5QqG4eOUdv"
-artifacts_bucket = "aws-sam-cli-managed-prod-pipeline--artifactsbucket-fhqxnncx0y1t"
+[test.pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws-us-gov:iam::541350054537:role/aws-sam-cli-managed-test-pipe-PipelineExecutionRole-2TpOJaOJ5Kqj"
+cloudformation_execution_role = "arn:aws-us-gov:iam::541350054537:role/aws-sam-cli-managed-test--CloudFormationExecutionRo-Y3syEFIdKMuH"
+artifacts_bucket = "aws-sam-cli-managed-test-pipeline--artifactsbucket-s3dv4fbjjkax"
 image_repository = ""
-region = "us-gov-west-1"
+region = "us-gov-east-1"
