@@ -12,8 +12,6 @@ phases:
   build:
     commands:
       - ls -al
-      - cd hello-world-sam
-      - ls -al
       - sam build --use-container --template ${SAM_TEMPLATE}
       - . ./assume-role.sh ${TESTING_PIPELINE_EXECUTION_ROLE} test-package
       - sam package --s3-bucket ${TESTING_ARTIFACT_BUCKET}
