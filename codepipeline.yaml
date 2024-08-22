@@ -65,7 +65,7 @@ Parameters:
     Default: "us-gov-east-1"
   ProdStackName:
     Type: String
-    Default: "sam-app"
+    Default: "sam-app-prod"
   ProdPipelineExecutionRole:
     Type: String
     Default: "arn:aws-us-gov:iam::541350054537:role/aws-sam-cli-managed-test-pipe-PipelineExecutionRole-2TpOJaOJ5Kqj"
